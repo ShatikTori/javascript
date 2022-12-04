@@ -2,6 +2,7 @@ class Kafemat {
 	voda;
 	kafe;
 	mleko;
+	cups=0;
 
 
 
@@ -17,6 +18,8 @@ class Kafemat {
 			this.kafe -=7;
 			this.mleko -=10;
 			console.log("Coffee is ready!");
+			this.cups++;
+			console.log(this.cups);
 			console.log("Remained ingredients: voda - "+this.voda+", kafe - "+this.kafe+", mleko - "+this.mleko+".");
 			return;
 		}
@@ -37,3 +40,4 @@ Phillips.makeCoffee();
 Phillips.makeCoffee();
 Phillips.makeCoffee();
 Phillips.makeCoffee();
+
